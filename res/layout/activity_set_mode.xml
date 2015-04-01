@@ -1,0 +1,261 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff8400"
+    >
+
+
+    <TableLayout
+
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_gravity="center"
+        android:stretchColumns="*" >
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/timeText"
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set Mode"
+                    android:textColor="@android:color/black"
+                    android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:id="@+id/timeText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date and Time"
+                    android:visibility="invisible"/>
+        </TableRow>
+
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <TextView
+                    android:id="@+id/timeText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date and Time"
+                    android:visibility="invisible"/>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:id="@+id/soundaomplitude_graphViewLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="4dip" >
+            <TextView
+                    android:id="@+id/batterytext"
+                    android:textColor="@android:color/black"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pressure 1" />
+
+            <EditText
+                    android:id="@+id/pressure1"
+                    android:gravity="center"
+                    android:layout_width="132dp"
+                    android:background="@drawable/shape"
+                    android:layout_gravity="center"
+                    android:layout_height="50dp"
+                    android:textColor="@android:color/black"
+                    android:ems="10" >
+            </EditText>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/graphViewLinearLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="4dip" >
+                <TextView
+                        android:id="@+id/speedtext"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pressure 2" />
+
+                <EditText
+                        android:id="@+id/pressure2"
+                        android:layout_width="150dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape"
+                        android:layout_height="50dp"
+                        android:textColor="@android:color/black"
+                        android:ems="10" >
+                </EditText>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:id="@+id/graphViewLinearLayout1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="4dip" >
+                <TextView
+                        android:id="@+id/distancetext"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pressure 3" />
+
+                <EditText
+                        android:id="@+id/pressure3"
+                        android:layout_width="132dp"
+                        android:background="@drawable/shape"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="50dp"
+                        android:textColor="@android:color/black"
+                        android:ems="10" >
+                </EditText>
+            </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/graphViewLinearLayouta"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="4dip" >
+                <TextView
+                        android:id="@+id/flowtext"
+                        android:layout_gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flow Sensor" />
+
+                <EditText
+                        android:id="@+id/flow"
+                        android:layout_width="132dp"
+                        android:background="@drawable/shape"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_height="50dp"
+                        android:textColor="@android:color/black"
+                        android:ems="10" >
+                </EditText>
+            </LinearLayout>
+            
+            
+        </TableRow>
+    
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+           <LinearLayout
+                    android:id="@+id/idlay"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="4dip" >  
+            
+         <TextView
+             android:id="@+id/litre"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Choose Litre"
+             android:layout_gravity="center"
+             android:textColor="@android:color/black"
+             android:textSize="17sp" />
+
+       <RadioGroup
+        android:id="@+id/radiolitre"
+       android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        
+        android:layout_height="wrap_content" >
+ 
+        <RadioButton
+            android:id="@+id/radioOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" 
+            android:textColor="@android:color/black"
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textColor="@android:color/black"
+            android:text="2" />
+   		<RadioButton
+            android:id="@+id/radioThree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:text="3" />
+    	</RadioGroup></LinearLayout>
+        </TableRow>
+        
+ <TableRow
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                android:layout_height="fill_parent">
+            <LinearLayout
+                    android:id="@+id/graphViewLinearLayout1a"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="4dip" >
+
+                <Button
+                    android:id="@+id/setBtn"
+                    android:layout_width="132dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="50dp"
+                    android:onClick="onClicked"
+                    android:text="Set" />
+            </LinearLayout>
+            
+            
+            
+        </TableRow>
+
+
+
+    </TableLayout>
+
+
+</ScrollView>
